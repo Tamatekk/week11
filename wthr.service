@@ -1,0 +1,11 @@
+[Unit]
+Description=weather service unit file
+
+[Service]
+Type=simple
+ExecStart=/home/tama/week11/wthr
+WorkingDirectory=/home/tama/week11
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

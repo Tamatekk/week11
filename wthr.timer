@@ -1,0 +1,10 @@
+[Unit]
+Description=Hourly timer for to run the wthr script
+
+[Timer]
+Unit=wthr.service
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target
